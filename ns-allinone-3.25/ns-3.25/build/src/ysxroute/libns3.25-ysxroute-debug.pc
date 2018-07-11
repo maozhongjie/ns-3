@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include/ns3.25
+
+Name: libns3-ysxroute
+Description: ns-3 module ns3-ysxroute
+Version: 3.25
+Libs: -L${libdir} -Wl,-Bdynamic -lns3.25-ysxroute-debug
+Cflags: -I${includedir}
+Requires: libns3.25-core-debug
